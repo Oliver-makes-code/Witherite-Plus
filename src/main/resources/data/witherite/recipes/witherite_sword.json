@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "witherite:witherite_ingot"
+  },
+  "result": {
+    "item": "witherite:witherite_sword"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "flamingcherry.witherite.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "SheepEntityMixin",
+    "MatchToolLootConditionMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

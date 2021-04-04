@@ -1,0 +1,13 @@
+{
+"itemGroup.witherite.general": "Witherite Items",
+"item.witherite.witherite": "Witherite",
+"item.witherite.witherite_ingot": "Witherite Ingot",
+"item.witherite.witherite_axe": "Witherite Axe",
+"item.witherite.witherite_pickaxe": "Witherite Pickaxe",
+"item.witherite.witherite_hoe": "Witherite Hoe",
+"item.witherite.witherite_sword": "Witherite Sword",
+"item.witherite.witherite_shovel": "Witherite Shovel",
+"item.witherite.witherite_shears": "Witherite Shears",
+"item.witherite.witherite_flint_and_steel": "Witherite Flint and Steel",
+"enchantment.witherite.withering": "Withering"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OWO",
+    "WSW",
+    "OWO"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "O":{
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "witherite:witherite",
+    "count": 1
+  }
+}
