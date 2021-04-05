@@ -1,6 +1,8 @@
 plugins {
     id 'fabric-loom' version '0.7-SNAPSHOT'
+    id "com.modrinth.minotaur" version "1.1.0"
     id 'maven-publish'
+    id 'com.matthewprenger.cursegradle' version '1.4.0'
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -9,6 +11,43 @@ targetCompatibility = JavaVersion.VERSION_1_8
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
+
+import com.matthewprenger.cursegradle.CurseUploadTask
+import com.modrinth.minotaur.TaskModrinthUpload
+
+task publishModrinth (type: TaskModrinthUpload) {
+    token = System.getenv("MODRINTH")
+    projectId = 'VQEUPUsB'
+    versionNumber = version
+    versionName = "$archivesBaseName-$version"
+    uploadFile = remapJar
+    addGameVersion("${project.minecraft_version}")
+    addLoader('fabric')
+}
+
+curseforge {
+    if (System.getenv("CURSE")) {
+        apiKey = System.getenv("CURSE")
+    }
+
+    project {
+        id = '467023'
+        changelog = ""
+        releaseType = "beta"
+        addGameVersion "${project.minecraft_version}"
+        addGameVersion 'Fabric'
+        mainArtifact(remapJar) {
+            displayName = "$archivesBaseName-$version"
+        }
+        afterEvaluate {
+            uploadTask.dependsOn("remapJar")
+        }
+    }
+
+    options {
+        forgeGradleIntegration = false
+    }
+}
 
 dependencies {
     //to change the versions see the gradle.properties file
@@ -54,6 +93,8 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 jar {
     from "LICENSE"
 }
+
+
 
 // configure the maven publication
 publishing {
