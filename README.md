@@ -1,2 +1,2 @@
 # Witherite
-Mod for Fabric that adds wither-related items to the game.
+Mod for Fabric that adds Wither-related items to the game.
