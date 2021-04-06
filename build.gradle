@@ -23,6 +23,7 @@ task publishModrinth (type: TaskModrinthUpload) {
     uploadFile = remapJar
     addGameVersion("${project.minecraft_version}")
     addLoader('fabric')
+    releaseType = 'beta'
 }
 
 curseforge {
