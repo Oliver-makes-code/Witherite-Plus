@@ -11,6 +11,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
+def changelog_text = 'View the changelog here: https://github.com/FlamingCherry/Witherite/blob/main/CHANGELOG.md'
 
 import com.matthewprenger.cursegradle.CurseUploadTask
 import com.modrinth.minotaur.TaskModrinthUpload
@@ -24,6 +25,7 @@ task publishModrinth (type: TaskModrinthUpload) {
     addGameVersion("${project.minecraft_version}")
     addLoader('fabric')
     releaseType = 'beta'
+    changelog = changelog_text
 }
 
 curseforge {
@@ -33,7 +35,7 @@ curseforge {
 
     project {
         id = '467023'
-        changelog = ""
+        changelog = changelog_text
         releaseType = "beta"
         addGameVersion "${project.minecraft_version}"
         addGameVersion 'Fabric'
