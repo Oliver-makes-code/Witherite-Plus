@@ -1,5 +1,6 @@
 package flamingcherry.witherite;
 
+import flamingcherry.witherite.enchantments.WitheringDefenseEnchantment;
 import flamingcherry.witherite.enchantments.WitheringEnchantment;
 import flamingcherry.witherite.items.*;
 import flamingcherry.witherite.material.WitheriteToolMaterial;
@@ -33,5 +34,6 @@ public class Register {
         Registry.register(Registry.ITEM, new Identifier(Witherite.MOD_ID, "witherite_shears"), WITHERITE_SHEARS);
         Registry.register(Registry.ITEM, new Identifier(Witherite.MOD_ID, "witherite_flint_and_steel"), WITHERITE_FLINT_AND_STEEL);
         Registry.register(Registry.ENCHANTMENT, new Identifier(Witherite.MOD_ID, "withering"), new WitheringEnchantment());
+        Registry.register(Registry.ENCHANTMENT, new Identifier(Witherite.MOD_ID, "withering_defense"), new WitheringDefenseEnchantment());
     }
 }
