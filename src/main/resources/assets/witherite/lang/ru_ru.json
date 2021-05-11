@@ -1,0 +1,14 @@
+{
+"itemGroup.witherite.general": "Визеритовые предметы",
+"item.witherite.witherite": "Визерит",
+"item.witherite.witherite_ingot": "Визеритовый слиток",
+"item.witherite.witherite_axe": "Визеритовый топор",
+"item.witherite.witherite_pickaxe": "Визеритовая кирка",
+"item.witherite.witherite_hoe": "Визеритовая мотыга",
+"item.witherite.witherite_sword": "Визеритовый меч",
+"item.witherite.witherite_shovel": "Визеритовая лопата",
+"item.witherite.witherite_shears": "Визеритовые ножницы",
+"item.witherite.witherite_flint_and_steel": "Визеритовое огниво",
+"enchantment.witherite.withering": "Иссушение",
+"enchantment.witherite.withering_defense": "Иссушающая защита"
+}

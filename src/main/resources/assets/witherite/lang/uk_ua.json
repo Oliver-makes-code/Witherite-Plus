@@ -1,0 +1,14 @@
+{
+"itemGroup.witherite.general": "Візерітові речі",
+"item.witherite.witherite": "Візеріт",
+"item.witherite.witherite_ingot": "Візерітовий злиток",
+"item.witherite.witherite_axe": "Візерітова сокира",
+"item.witherite.witherite_pickaxe": "Візерітове кайло",
+"item.witherite.witherite_hoe": "Візерітова мотика",
+"item.witherite.witherite_sword": "Візерітовий меч",
+"item.witherite.witherite_shovel": "Візерітова лопата",
+"item.witherite.witherite_shears": "Візерітові ножиці",
+"item.witherite.witherite_flint_and_steel": "Візерітова запальничка",
+"enchantment.witherite.withering": "Висушування",
+"enchantment.witherite.withering_defense": "Висушуючий захист"
+}
