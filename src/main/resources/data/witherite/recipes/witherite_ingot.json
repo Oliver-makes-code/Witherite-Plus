@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "witherite:witherite"
-  },
-  "result": "witherite:witherite_ingot",
-  "experience": 5,
-  "cookingtime": 1500
-}

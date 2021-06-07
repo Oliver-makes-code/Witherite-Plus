@@ -4,8 +4,8 @@
   "package": "flamingcherry.witherite.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "SheepEntityMixin",
-    "MatchToolLootConditionMixin"
+    "ItemPredicateMixin",
+    "SheepEntityMixin"
   ],
   "client": [],
   "injectors": {

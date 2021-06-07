@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "witherite:enriched_witherite_powder"
+  },
+  "result": "witherite:enriched_witherite_ingot",
+  "experience": 30,
+  "cookingtime": 900
+}

@@ -8,9 +8,9 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
-public class WitheringEnchantment extends Enchantment {
+public class WitheringEnch extends Enchantment {
 
-    public WitheringEnchantment() {
+    public WitheringEnch() {
         super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 

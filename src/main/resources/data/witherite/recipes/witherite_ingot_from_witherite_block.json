@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "witherite:witherite_block"
+    }
+  },
+  "result": {
+    "item": "witherite:witherite_ingot",
+    "count": 9
+  }
+}

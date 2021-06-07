@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "witherite:witherite_flint_and_steel"
+  },
+  "addition": {
+    "item": "witherite:enriched_witherite_ingot"
+  },
+  "result": {
+    "item": "witherite:enriched_witherite_flint_and_steel"
+  }
+}

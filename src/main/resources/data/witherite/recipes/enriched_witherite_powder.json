@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "CNC",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "witherite:witherite_ingot"
+    },
+    "C": {
+      "item": "witherite:organic_witherite"
+    },
+    "N": {
+      "item": "witherite:damaged_nether_star"
+    }
+  },
+  "result": {
+    "item": "witherite:enriched_witherite_powder",
+    "count": 1
+  }
+}

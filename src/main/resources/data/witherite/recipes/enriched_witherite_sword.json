@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": {
+    "item": "witherite:witherite_sword"
+  },
+  "addition": {
+    "item": "witherite:enriched_witherite_ingot"
+  },
+  "result": {
+    "item": "witherite:enriched_witherite_sword"
+  }
+}

@@ -4,28 +4,28 @@ import flamingcherry.witherite.ItemRegistry;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class WitheriteToolMaterial implements ToolMaterial {
+public class EnrWitheriteToolMaterial implements ToolMaterial {
 
-    public static final WitheriteToolMaterial INSTANCE = new WitheriteToolMaterial();
+    public static final EnrWitheriteToolMaterial INSTANCE = new EnrWitheriteToolMaterial();
 
     @Override
     public int getDurability() {
-        return 2630;
+        return 4530;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 11.5F;
+        return 21.4F;
     }
 
     @Override
     public float getAttackDamage() {
-        return 5.0F;
+        return 6.0F;
     }
 
     @Override
     public int getMiningLevel() {
-        return 4;
+        return 5;
     }
 
     @Override
@@ -35,6 +35,6 @@ public class WitheriteToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ItemRegistry.WITHERITE_INGOT);
+        return Ingredient.ofItems(ItemRegistry.ENR_WITHERITE_INGOT);
     }
 }

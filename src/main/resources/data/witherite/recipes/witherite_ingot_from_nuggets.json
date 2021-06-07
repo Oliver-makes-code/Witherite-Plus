@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "witherite:witherite_nugget"
+    }
+  },
+  "result": {
+    "item": "witherite:witherite_ingot",
+    "count": 1
+  }
+}

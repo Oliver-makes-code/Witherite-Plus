@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "witherite:enriched_witherite_ingot"
+    }
+  },
+  "result": {
+    "item": "witherite:enriched_witherite_block",
+    "count": 1
+  }
+}
