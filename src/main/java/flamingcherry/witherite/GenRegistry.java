@@ -26,8 +26,8 @@ public class GenRegistry {
     private static final ConfiguredFeature<?, ?> WITHERITE_DEPOSIT_NETHER = Feature.ORE.configure(new OreFeatureConfig
             (OreFeatureConfig.Rules.BASE_STONE_NETHER, WITHERITE_DEPOSIT.getDefaultState(), 3))
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider
-                    .create(YOffset.aboveBottom(1), YOffset.aboveBottom(5)))))
-            .spreadHorizontally().repeat(1);
+                    .create(YOffset.aboveBottom(1), YOffset.aboveBottom(12)))))
+            .spreadHorizontally().repeat(2);
 
     public static void register() {
         // Register Configured Features

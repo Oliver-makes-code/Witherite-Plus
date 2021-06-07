@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "witherite:witherite_sword"
+    "witherite:witherite_sword",
+    "witherite:enriched_witherite_sword"
   ]
 }
