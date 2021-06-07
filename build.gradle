@@ -24,7 +24,7 @@ task publishModrinth (type: TaskModrinthUpload) {
     uploadFile = remapJar
     addGameVersion("${project.minecraft_version}")
     addLoader('fabric')
-    releaseType = 'alpha'
+    releaseType = 'beta'
     changelog = changelog_text
 }
 
@@ -39,6 +39,7 @@ curseforge {
         releaseType = "beta"
         addGameVersion "${project.minecraft_version}"
         addGameVersion 'Fabric'
+        addGameVersion 'Java 16'
         mainArtifact(remapJar) {
             displayName = "$archivesBaseName-$version"
         }
