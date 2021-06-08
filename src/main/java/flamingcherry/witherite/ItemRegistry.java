@@ -34,6 +34,8 @@ public class ItemRegistry {
             .group(GROUP).fireproof().rarity(Rarity.UNCOMMON));
     public static final Item ENR_WITHERITE_INGOT = new EnrWitheriteIngot(new FabricItemSettings()
             .group(GROUP).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item ENR_WITHERITE_NUGGET = new EnrWitheriteNugget(new FabricItemSettings()
+            .group(GROUP).fireproof().rarity(Rarity.UNCOMMON));
 
     // Tool Items
     public static ToolItem WITHERITE_SHOVEL = new WitheriteShovel
@@ -141,6 +143,7 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, new Identifier(ID, "damaged_nether_star"), DAMAGED_NETHER_STAR);
         Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_powder"), ENR_WITHERITE_POWDER);
         Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_ingot"), ENR_WITHERITE_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_nugget"), ENR_WITHERITE_NUGGET);
 
         // Register Tool Items
         Registry.register(Registry.ITEM, new Identifier(ID, "witherite_axe"), WITHERITE_AXE);
