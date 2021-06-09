@@ -23,10 +23,8 @@ public class ItemPredicateMixin {
     private Set<Item> items;
     @ModifyVariable(method = "test", at = @At("HEAD"))
     public ItemStack witheriteShears(ItemStack stack) {
-        Witherite.LOGGER.info("Shears used");
         if (items != null) {
             if(!items.isEmpty() && FabricToolTags.SHEARS.contains(stack.getItem())) {
-                Witherite.LOGGER.info("Fabric shears found");
                 ItemStack itemStack = new ItemStack(Items.SHEARS);
                 itemStack.setCount(stack.getCount());
                 itemStack.setTag(stack.getOrCreateTag());
