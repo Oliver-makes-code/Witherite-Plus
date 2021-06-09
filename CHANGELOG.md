@@ -1,3 +1,6 @@
+### [0.0.6] - 2021-06-09
+* [**Removed**] Debug message, which spamming to logs
+
 ### [0.0.5] - 2021-06-09
 In this version, many things have changed. If you have any difficulties, visit the mod's wiki: https://github.com/FlamingCherry/Witherite/wiki
 
