@@ -17,8 +17,9 @@ public class LootTables {
     private static final Identifier NETHER_BRIDGE = new Identifier("minecraft", "chests/nether_bridge");
 
     public static void register() {
-        // Register event and modify Wither Skeleton loot table
+        // Register event
         LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
+            // Modify Wither Skeleton loot table
             if (WITHER_SKELETON.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
@@ -26,24 +27,16 @@ public class LootTables {
                         .withCondition((KilledByPlayerLootCondition.builder().build()))
                         .withCondition(RandomChanceWithLootingLootCondition.builder(0.020f, 0.01f).build());
                 supplier.withPool(poolBuilder.build());
-            }
-        }));
-
-        // Register event and modify Wither loot table
-        LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
-            if (WITHER.equals(id)) {
+                // Modify Wither  loot table
+            } else if (WITHER.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .withEntry(ItemEntry.builder(ItemRegistry.DAMAGED_NETHER_STAR).build())
                         .withCondition((KilledByPlayerLootCondition.builder().build()))
                         .withCondition(RandomChanceWithLootingLootCondition.builder(0.070f, 0.06f).build());
                 supplier.withPool(poolBuilder.build());
-            }
-        }));
-
-        // Register event and modify Nether Fortress loot table
-        LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
-            if (NETHER_BRIDGE.equals(id)) {
+                // Modify Nether Bridge loot table
+            } else if (NETHER_BRIDGE.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(UniformLootNumberProvider.create(0.0f, 1.0f))
                         .withEntry(ItemEntry.builder(ItemRegistry.PIECE_OF_DAMAGED_NETHER_STAR).weight(30).build());

@@ -1,13 +1,11 @@
 package flamingcherry.witherite;
 
-import flamingcherry.witherite.blockitems.EnrWitheriteBlockItem;
-import flamingcherry.witherite.blockitems.WitheriteBlockItem;
-import flamingcherry.witherite.blockitems.WitheriteDepositItem;
 import flamingcherry.witherite.items.*;
 import flamingcherry.witherite.material.EnrWitheriteToolMaterial;
 import flamingcherry.witherite.material.WitheriteToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -19,22 +17,23 @@ public class ItemRegistry {
     private static final Block WITHERITE_DEPOSIT = BlockRegistry.WITHERITE_DEPOSIT;
     private static final Block WITHERITE_BLOCK = BlockRegistry.WITHERITE_BLOCK;
     private static final Block ENR_WITHERITE_BLOCK = BlockRegistry.ENR_WITHERITE_BLOCK;
+    private static final ArmorMaterial WITHERITE_MATERIAL = MaterialRegistry.WITHERITE_MATERIAL;
 
     // Items
-    public static final Item RAW_WITHERITE = new RawWitherite(new FabricItemSettings().group(GROUP));
-    public static final Item ORGANIC_WITHERITE = new OrganicWitherite(new FabricItemSettings().group(GROUP));
-    public static final Item REFINED_WITHERITE = new RefinedWitherite(new FabricItemSettings().group(GROUP).fireproof());
-    public static final Item WITHERITE_INGOT = new WitheriteIngot(new Item.Settings().group(GROUP).fireproof());
-    public static final Item WITHERITE_NUGGET = new WitheriteNugget(new Item.Settings().group(GROUP).fireproof());
-    public static final Item PIECE_OF_DAMAGED_NETHER_STAR = new PieceOfDamagedNetherStar(new FabricItemSettings()
+    public static final Item RAW_WITHERITE = new Item(new FabricItemSettings().group(GROUP));
+    public static final Item ORGANIC_WITHERITE = new Item(new FabricItemSettings().group(GROUP));
+    public static final Item REFINED_WITHERITE = new Item(new FabricItemSettings().group(GROUP).fireproof());
+    public static final Item WITHERITE_INGOT = new Item(new Item.Settings().group(GROUP).fireproof());
+    public static final Item WITHERITE_NUGGET = new Item(new Item.Settings().group(GROUP).fireproof());
+    public static final Item PIECE_OF_DAMAGED_NETHER_STAR = new Item(new FabricItemSettings()
             .group(GROUP).rarity(Rarity.UNCOMMON));
-    public static final Item DAMAGED_NETHER_STAR = new DamagedNetherStar(new FabricItemSettings()
+    public static final Item DAMAGED_NETHER_STAR = new Item(new FabricItemSettings()
             .group(GROUP).rarity(Rarity.UNCOMMON));
-    public static final Item ENR_WITHERITE_POWDER = new EnrWitheritePowder(new FabricItemSettings()
+    public static final Item ENR_WITHERITE_POWDER = new Item(new FabricItemSettings()
             .group(GROUP).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item ENR_WITHERITE_INGOT = new EnrWitheriteIngot(new FabricItemSettings()
+    public static final Item ENR_WITHERITE_INGOT = new Item(new FabricItemSettings()
             .group(GROUP).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item ENR_WITHERITE_NUGGET = new EnrWitheriteNugget(new FabricItemSettings()
+    public static final Item ENR_WITHERITE_NUGGET = new Item(new FabricItemSettings()
             .group(GROUP).fireproof().rarity(Rarity.UNCOMMON));
 
     // Tool Items
@@ -93,6 +92,27 @@ public class ItemRegistry {
                     .rarity(Rarity.UNCOMMON)
                     .fireproof());
 
+    // Armor Items
+    public static final Item WITHERITE_HELMET = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
+
+    public static final Item WITHERITE_CHESTPLATE = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
+
+    public static final Item WITHERITE_LEGGINGS = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
+
+    public static final Item WITHERITE_BOOTS = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
+
     // Shears Items
     public static ShearsItem WITHERITE_SHEARS = new WitheriteShears
             (new FabricItemSettings()
@@ -122,13 +142,13 @@ public class ItemRegistry {
                     .fireproof());
 
     // Block Items
-    public static final BlockItem WITHERITE_DEPOSIT_ITEM = new WitheriteDepositItem
+    public static final BlockItem WITHERITE_DEPOSIT_ITEM = new BlockItem
             (WITHERITE_DEPOSIT, new FabricItemSettings().group(GROUP));
 
-    public static final BlockItem WITHERITE_BLOCK_ITEM = new WitheriteBlockItem
+    public static final BlockItem WITHERITE_BLOCK_ITEM = new BlockItem
             (WITHERITE_BLOCK, new FabricItemSettings().group(GROUP));
 
-    public static final BlockItem ENR_WITHERITE_BLOCK_ITEM = new EnrWitheriteBlockItem
+    public static final BlockItem ENR_WITHERITE_BLOCK_ITEM = new BlockItem
             (ENR_WITHERITE_BLOCK, new FabricItemSettings().group(GROUP));
 
 
@@ -156,6 +176,12 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_hoe"), ENR_WITHERITE_HOE);
         Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_sword"), ENR_WITHERITE_SWORD);
         Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_shovel"), ENR_WITHERITE_SHOVEL);
+
+        // Register Armor Items
+        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_helmet"), WITHERITE_HELMET);
+        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_chestplate"), WITHERITE_CHESTPLATE);
+        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_leggings"), WITHERITE_LEGGINGS);
+        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_boots"), WITHERITE_BOOTS);
 
         // Register Shears Items
         Registry.register(Registry.ITEM, new Identifier(ID, "witherite_shears"), WITHERITE_SHEARS);

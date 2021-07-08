@@ -1,3 +1,6 @@
+### [0.0.7] - 2021-07-08
+* No major changes, just update for 1.17.1
+
 ### [0.0.6] - 2021-06-09
 * [**Removed**] Debug message, which spamming to logs
 
