@@ -1,5 +1,6 @@
 ### [0.0.8] - 2021-07-15
 * Fixed generation of Witherite Deposits. Thanks to Liliepond for the fix.
+* Some code optimizations, mod size reduced.
 
 ### [0.0.7] - 2021-07-08
 * No major changes, just update for 1.17.1
