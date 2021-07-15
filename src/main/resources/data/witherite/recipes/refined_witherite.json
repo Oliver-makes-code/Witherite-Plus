@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "witherite:raw_witherite"
+    },
+    "result": "witherite:refined_witherite",
+    "experience": 10,
+    "cookingtime": 500
+}
