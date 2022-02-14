@@ -1,4 +1,7 @@
-
+### [0.1.0] - 2022-02-14
+- [**port**] 1.18
+- [**added**] Witherite Armor
+- [**overhauled**] Ingot and Block textures
 
 ## Old Witherite mod
 ### [0.0.8-hotfix] - 2021-07-15

@@ -112,6 +112,25 @@ public class ItemRegistry {
             (WITHERITE_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings()
                     .group(GROUP)
                     .fireproof());
+    public static final Item ENRICHED_WITHERITE_HELMET = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
+
+    public static final Item ENRICHED_WITHERITE_CHESTPLATE = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
+
+    public static final Item ENRICHED_WITHERITE_LEGGINGS = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
+
+    public static final Item ENRICHED_WITHERITE_BOOTS = new ArmorItem
+            (WITHERITE_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings()
+                    .group(GROUP)
+                    .fireproof());
 
     // Shears Items
     public static ShearsItem WITHERITE_SHEARS = new WitheriteShears
@@ -178,10 +197,14 @@ public class ItemRegistry {
         Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_shovel"), ENR_WITHERITE_SHOVEL);
 
         // Register Armor Items
-        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_helmet"), WITHERITE_HELMET);
-        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_chestplate"), WITHERITE_CHESTPLATE);
-        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_leggings"), WITHERITE_LEGGINGS);
-        //Registry.register(Registry.ITEM, new Identifier(ID, "witherite_boots"), WITHERITE_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "witherite_helmet"), WITHERITE_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(ID, "witherite_chestplate"), WITHERITE_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(ID, "witherite_leggings"), WITHERITE_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(ID, "witherite_boots"), WITHERITE_BOOTS);
+        //Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_helmet"), ENRICHED_WITHERITE_HELMET);
+        //Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_chestplate"), ENRICHED_WITHERITE_CHESTPLATE);
+        //Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_leggings"), ENRICHED_WITHERITE_LEGGINGS);
+        //Registry.register(Registry.ITEM, new Identifier(ID, "enriched_witherite_boots"), ENRICHED_WITHERITE_BOOTS);
 
         // Register Shears Items
         Registry.register(Registry.ITEM, new Identifier(ID, "witherite_shears"), WITHERITE_SHEARS);
