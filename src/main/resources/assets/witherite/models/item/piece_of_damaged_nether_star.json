@@ -1,6 +1,0 @@
-{
-	"parent": "minecraft:item/generated",
-	"textures": {
-	  "layer0": "witherite:item/piece_of_damaged_nether_star"
-	}
-  }

@@ -1,6 +1,5 @@
 package flamingcherry.witherite.mixin;
 
-import flamingcherry.witherite.ItemRegistry;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -37,9 +36,7 @@ public abstract class SheepEntityMixin extends LivingEntity {
         if (FabricToolTags.SHEARS.contains(itemStack.getItem())) {
             if (!this.world.isClient && isShearable()) {
                 this.sheared(SoundCategory.PLAYERS);
-                itemStack.damage(1, (LivingEntity) player, (Consumer<LivingEntity>) ((playerEntity) -> {
-                    playerEntity.sendToolBreakStatus(hand);
-                }));
+                itemStack.damage(1, player, (Consumer<LivingEntity>) ((playerEntity) -> playerEntity.sendToolBreakStatus(hand)));
                 info.setReturnValue(ActionResult.SUCCESS);
             } else {
                 info.setReturnValue(ActionResult.CONSUME);

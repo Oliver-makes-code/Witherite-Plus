@@ -1,19 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "witherite",
+  "id": "witherite_plus",
   "version": "${version}",
-  "name": "Witherite",
+  "name": "Witherite Plus",
   "description": "Mod for Fabric that adds Wither-related items to the game.",
   "authors": [
-    "FlamingCherry"
+    "FlamingCherry",
+    "Oliver"
   ],
   "contact": {
-    "repo": "https://github.com/FlamingCherry/Witherite",
-    "homepage": "https://github.com/FlamingCherry/Witherite",
-    "issues": "https://github.com/FlamingCherry/Witherite/issues"
+    "repo": "https://github.com/Oliver-makes-code/Witherite-Plus",
+    "homepage": "https://github.com/Oliver-makes-code/Witherite-Plus",
+    "issues": "https://github.com/Oliver-makes-code/Witherite-Plus/issues"
   },
   "license": "GPL-3.0",
-  "icon": "assets/witherite/icon.png",
+  "icon": "assets/witherite_plus/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [],
@@ -25,8 +26,8 @@
     "witherite.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.12.12",
     "fabric": "*",
-    "minecraft": "1.17.x"
+    "minecraft": "1.18.1"
   }
 }

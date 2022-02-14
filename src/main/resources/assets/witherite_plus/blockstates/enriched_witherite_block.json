@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "witherite_plus:block/enriched_witherite_block" }
+  }
+}

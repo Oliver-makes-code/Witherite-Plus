@@ -10,31 +10,52 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.decorator.Decorator;
-import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
-import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
+import net.minecraft.world.gen.decorator.CountPlacementModifier;
+import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
+import net.minecraft.world.gen.decorator.SquarePlacementModifier;
+import net.minecraft.world.gen.feature.*;
 
 public class GenRegistry {
     private static final String ID = Witherite.MOD_ID;
     private static final ItemGroup GROUP = Witherite.WITHERITE_GROUP;
     private static final Block WITHERITE_DEPOSIT = BlockRegistry.WITHERITE_DEPOSIT;
 
-    // Configured Features
-    private static final ConfiguredFeature<?, ?> WITHERITE_DEPOSIT_NETHER = Feature.ORE.configure(new OreFeatureConfig
-            (OreFeatureConfig.Rules.BASE_STONE_NETHER, WITHERITE_DEPOSIT.getDefaultState(), 3))
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider
-                    .create(YOffset.aboveBottom(1), YOffset.fixed(12)))))
-            .spreadHorizontally().repeat(2);
+    private static final ConfiguredFeature<?,?> WITHERITE_FEATURE = Feature.ORE.configure(
+            new OreFeatureConfig(
+                    OreConfiguredFeatures.NETHERRACK,
+                    WITHERITE_DEPOSIT.getDefaultState(),
+                    2
+            )
+    );
+
+    public static final PlacedFeature WITHERITE_DEPOSIT_PLACED = WITHERITE_FEATURE.withPlacement(
+            CountPlacementModifier.of(3),
+            SquarePlacementModifier.of(),
+            HeightRangePlacementModifier.uniform(YOffset.aboveBottom(1), YOffset.fixed(12))
+    );
 
     public static void register() {
-        // Register Configured Features
-        RegistryKey<ConfiguredFeature<?, ?>> witheriteDeposit = RegistryKey
-                .of(Registry.CONFIGURED_FEATURE_KEY, new Identifier(ID, "witherite_deposit_nether"));
+        Registry.register(
+                BuiltinRegistries.CONFIGURED_FEATURE,
+                id("witherite_ore"),
+                WITHERITE_FEATURE
+        );
+        Registry.register(
+                BuiltinRegistries.PLACED_FEATURE,
+                id("witherite_ore"),
+                WITHERITE_DEPOSIT_PLACED
+        );
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(
+                        Registry.PLACED_FEATURE_KEY,
+                        id("witherite_ore")
+                )
+        );
+    }
 
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, witheriteDeposit.getValue(), WITHERITE_DEPOSIT_NETHER);
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, witheriteDeposit);
+    public static Identifier id(String value) {
+        return new Identifier(ID,value);
     }
 }

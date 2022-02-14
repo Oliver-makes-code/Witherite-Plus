@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class Witherite implements ModInitializer {
-    public static final String MOD_ID = "witherite";
+    public static final String MOD_ID = "witherite_plus";
     public static final ItemGroup WITHERITE_GROUP = FabricItemGroupBuilder.build(
             new Identifier(MOD_ID, "general"), () -> new ItemStack(ItemRegistry.WITHERITE_INGOT));
 

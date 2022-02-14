@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "witherite_plus:block/witherite_block"
+  }
+}

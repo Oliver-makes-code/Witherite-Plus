@@ -1,6 +1,5 @@
 package flamingcherry.witherite.mixin;
 
-import flamingcherry.witherite.Witherite;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
