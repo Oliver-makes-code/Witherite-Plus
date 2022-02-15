@@ -93,7 +93,18 @@ jar {
     def fabric = project(":fabric").jar
     dependsOn fabric
     from fabric.archiveFile.map { zipTree(it) }
-    def forge = project(":fabric").jar
+    def forge = project(":forge").jar
     dependsOn forge
     from forge.archiveFile.map { zipTree(it) }
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("META-INF/mods.toml") {
+        expand "version": project.version
+    }
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
 }
