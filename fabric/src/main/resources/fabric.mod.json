@@ -13,7 +13,7 @@
     "homepage": "https://github.com/Oliver-makes-code/Witherite-Plus",
     "issues": "https://github.com/Oliver-makes-code/Witherite-Plus/issues"
   },
-  "license": "GPL-3.0",
+  "license": "LGPL-2.1",
   "icon": "assets/witherite_plus/icon.png",
   "environment": "*",
   "entrypoints": {

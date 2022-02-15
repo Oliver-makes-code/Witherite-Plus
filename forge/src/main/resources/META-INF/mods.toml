@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[39,)"
 issueTrackerURL = "https://github.com/Oliver-makes-code/Witherite-Plus/issues"
-license = "GPL-3.0"
+license = "LGPL-2.1"
 
 [[mods]]
 modId = "witherite_plus"
