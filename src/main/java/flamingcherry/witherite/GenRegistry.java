@@ -17,7 +17,6 @@ import net.minecraft.world.gen.feature.*;
 
 public class GenRegistry {
     private static final String ID = Witherite.MOD_ID;
-    private static final ItemGroup GROUP = Witherite.WITHERITE_GROUP;
     private static final Block WITHERITE_DEPOSIT = BlockRegistry.WITHERITE_DEPOSIT;
 
     private static final ConfiguredFeature<?,?> WITHERITE_FEATURE = Feature.ORE.configure(
