@@ -1,3 +1,6 @@
+### [0.1.2] - 2022-02-15
+- [**added**] Lang entries for Witherite Armor
+
 ### [0.1.1] - 2022-02-14
 - [**added**] Enriched Witherite Armor recipes
 

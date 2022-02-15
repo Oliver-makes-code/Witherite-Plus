@@ -1,5 +1,9 @@
 {
 "itemGroup.witherite_plus.general": "Witherite Items",
+"item.witherite_plus.witherite_chestplate": "Witherite Chestplate",
+"item.witherite_plus.witherite_helmet": "Witherite Helmet",
+"item.witherite_plus.witherite_leggings": "Witherite Leggings",
+"item.witherite_plus.witherite_boots": "Witherite Boots",
 "item.witherite_plus.raw_witherite": "Raw Witherite",
 "item.witherite_plus.organic_witherite": "Organic Witherite",
 "item.witherite_plus.refined_witherite": "Refined Witherite",
