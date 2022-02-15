@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[39,)"
+issueTrackerURL = "https://github.com/Oliver-makes-code/Witherite-Plus/issues"
+license = "GPL-3.0"
+
+[[mods]]
+modId = "witherite_plus"
+version = "${version}"
+displayName = "Witherite Plus"
+authors = ["FlamingCherry", "Oliver"]
+description = '''
+Mod that adds Wither-related items to the game.
+'''
+logoFile = "assets/witherite_plus/icon.png"
+
+[[dependencies.witherite_plus]]
+modId = "forge"
+mandatory = true
+versionRange = "[39,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.witherite_plus]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18,)"
+ordering = "NONE"
+side = "BOTH"

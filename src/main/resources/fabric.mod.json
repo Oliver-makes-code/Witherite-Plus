@@ -3,7 +3,7 @@
   "id": "witherite_plus",
   "version": "${version}",
   "name": "Witherite Plus",
-  "description": "Mod for Fabric that adds Wither-related items to the game.",
+  "description": "Mod that adds Wither-related items to the game.",
   "authors": [
     "FlamingCherry",
     "Oliver"
@@ -19,11 +19,11 @@
   "entrypoints": {
     "client": [],
     "main": [
-      "flamingcherry.witherite.Witherite"
+      "flamingcherry.witherite.fabric.WitheriteFabric"
     ]
   },
   "mixins": [
-    "witherite.mixins.json"
+    "witherite_fabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.12.12",
