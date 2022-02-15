@@ -24,7 +24,6 @@ group = project.maven_group
 subprojects {
     apply plugin: "dev.architectury.loom"
     apply plugin: "org.quiltmc.quilt-mappings-on-loom"
-    apply plugin: "com.github.johnrengelman.shadow"
 
     dependencies {
         minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -48,6 +47,7 @@ subprojects {
 allprojects {
     apply plugin: "java"
     apply plugin: "architectury-plugin"
+    apply plugin: "com.github.johnrengelman.shadow"
 
     archivesBaseName = rootProject.archives_base_name
     version = rootProject.mod_version
@@ -73,4 +73,14 @@ allprojects {
     jar {
         from "lisence"
     }
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.WARN
+    def forge = project(":forge").remapJar
+    dependsOn forge
+    from forge.archiveFile.map { zipTree(it) }
+    def fabric = project(":fabric").remapJar
+    dependsOn fabric
+    from fabric.archiveFile.map { zipTree(it) }
 }

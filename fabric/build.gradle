@@ -23,6 +23,7 @@ dependencies {
 
 shadowJar {
     configurations = [project.configurations.shadowCommon]
+    relocate "flamingcherry.witherite.common", "flamingcherry.witherite.commonfabric"
     classifier "dev-shadow"
 }
 

@@ -21,9 +21,8 @@ dependencies {
 }
 
 shadowJar {
-    exclude "fabric.mod.json"
-
     configurations = [project.configurations.shadowCommon]
+    relocate "flamingcherry.witherite.common", "flamingcherry.witherite.commonforge"
     classifier "dev-shadow"
 }
 
