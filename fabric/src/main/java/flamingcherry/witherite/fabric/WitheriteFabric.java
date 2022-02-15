@@ -12,7 +12,6 @@ public class WitheriteFabric implements ModInitializer {
         FabricBlockRegistry.register();
         FabricItemRegistry.register();
         FabricGenRegistry.register();
-        FabricLootTables.register();
 
         Registry.register(Registry.ENCHANTMENT, WitheriteCommon.id("withering"), new WitheringEnch());
         Registry.register(Registry.ENCHANTMENT, WitheriteCommon.id("withering_defense"), new WitheringDefEnch());

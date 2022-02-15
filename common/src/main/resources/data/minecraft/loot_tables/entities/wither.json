@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "conditions": [
+            {
+              "condition": "minecraft:killed_by_player",
+              "inverse": true
+            },
+            {
+              "condition": "minecraft:random_chance_with_looting",
+              "chance": 0.07,
+              "looting_multiplier": 1.06
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

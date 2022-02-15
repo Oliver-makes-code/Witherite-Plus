@@ -1,21 +1,22 @@
-package flamingcherry.witherite.fabric;
+package flamingcherry.witherite.forge;
 
 import flamingcherry.witherite.common.Blocks;
 import flamingcherry.witherite.common.WitheriteCommon;
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Block;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.decorator.CountPlacementModifier;
 import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
 import net.minecraft.world.gen.decorator.InSquarePlacementModifier;
 import net.minecraft.world.gen.feature.*;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
-public class FabricGenRegistry {
+public class ForgeGenRegistry {
     private static final Block WITHERITE_DEPOSIT = Blocks.WITHERITE_DEPOSIT;
 
     private static final ConfiguredFeature<?,?> WITHERITE_FEATURE = Feature.ORE.configure(
@@ -32,7 +33,7 @@ public class FabricGenRegistry {
             HeightRangePlacementModifier.createUniform(YOffset.fixed(1), YOffset.fixed(12))
     );
 
-    public static void register() {
+    public static void registerOre() {
         Registry.register(
                 BuiltinRegistries.CONFIGURED_FEATURE,
                 WitheriteCommon.id("witherite_ore"),
@@ -43,13 +44,14 @@ public class FabricGenRegistry {
                 WitheriteCommon.id("witherite_ore"),
                 WITHERITE_DEPOSIT_PLACED
         );
-        BiomeModifications.addFeature(
-                BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES,
-                RegistryKey.of(
-                        Registry.PLACED_FEATURE_KEY,
-                        WitheriteCommon.id("witherite_ore")
-                )
-        );
+    }
+
+    @Mod.EventBusSubscriber(modid = WitheriteCommon.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+    public static class Registers {
+        @SubscribeEvent
+        public static void biomeLoading(BiomeLoadingEvent event) {
+            if (event.getCategory() != Biome.Category.NETHER) return;
+            event.getGeneration().feature(GenerationStep.Feature.UNDERGROUND_ORES, WITHERITE_DEPOSIT_PLACED);
+        }
     }
 }

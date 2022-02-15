@@ -47,6 +47,6 @@ public class WitheriteArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getKnockbackResistance() {
-        return 10.0F;
+        return 1.0F;
     }
 }

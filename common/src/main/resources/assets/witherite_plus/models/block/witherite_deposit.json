@@ -1,12 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "particle": "witherite_plus:block/witherite_deposit_front",
-    "north": "witherite_plus:block/witherite_deposit_front",
-    "south": "witherite_plus:block/witherite_deposit_side",
-    "east": "witherite_plus:block/witherite_deposit_side",
-    "west": "witherite_plus:block/witherite_deposit_front",
-    "up": "witherite_plus:block/witherite_deposit_top",
-    "down": "witherite_plus:block/witherite_deposit_bottom"
+    "": "witherite_plus:block/witherite_deposit"
   }
 }

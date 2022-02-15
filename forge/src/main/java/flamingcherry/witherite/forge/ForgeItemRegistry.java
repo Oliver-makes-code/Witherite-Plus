@@ -58,10 +58,5 @@ public class ForgeItemRegistry {
         // Register Flint and Steel Items
         register("witherite_flint_and_steel", Items.WITHERITE_FLINT_AND_STEEL);
         register("enriched_witherite_flint_and_steel", Items.ENR_WITHERITE_FLINT_AND_STEEL);
-
-        // Register Block Items
-        register("witherite_deposit", Items.WITHERITE_DEPOSIT_ITEM);
-        register("witherite_block", Items.WITHERITE_BLOCK_ITEM);
-        register("enriched_witherite_block", Items.ENR_WITHERITE_BLOCK_ITEM);
     }
 }

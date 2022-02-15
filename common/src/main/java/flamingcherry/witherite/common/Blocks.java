@@ -8,7 +8,7 @@ public class Blocks {
     // Blocks
     public static final Block WITHERITE_DEPOSIT = new Block
             (Block.Settings
-                    .copy(net.minecraft.block.Blocks.NETHERITE_BLOCK)
+                    .copy(net.minecraft.block.Blocks.OBSIDIAN)
                     .hardness(40.0f)
                     .resistance(900.0f)
                     .requiresTool()

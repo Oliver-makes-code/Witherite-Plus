@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "witherite_plus:witherite_deposit",
+    "witherite_plus:witherite_block",
+    "witherite_plus:enriched_witherite_block"
+  ]
+}
