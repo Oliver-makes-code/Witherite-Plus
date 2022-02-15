@@ -12,7 +12,7 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.decorator.CountPlacementModifier;
 import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
-import net.minecraft.world.gen.decorator.SquarePlacementModifier;
+import net.minecraft.world.gen.decorator.InSquarePlacementModifier;
 import net.minecraft.world.gen.feature.*;
 
 public class GenRegistry {
@@ -29,9 +29,9 @@ public class GenRegistry {
     );
 
     public static final PlacedFeature WITHERITE_DEPOSIT_PLACED = WITHERITE_FEATURE.withPlacement(
-            CountPlacementModifier.of(3),
-            SquarePlacementModifier.of(),
-            HeightRangePlacementModifier.uniform(YOffset.aboveBottom(1), YOffset.fixed(12))
+            CountPlacementModifier.create(3),
+            InSquarePlacementModifier.getInstance(),
+            HeightRangePlacementModifier.createUniform(YOffset.aboveBottom(1), YOffset.fixed(12))
     );
 
     public static void register() {
