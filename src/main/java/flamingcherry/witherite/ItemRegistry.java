@@ -18,6 +18,7 @@ public class ItemRegistry {
     private static final Block WITHERITE_BLOCK = BlockRegistry.WITHERITE_BLOCK;
     private static final Block ENR_WITHERITE_BLOCK = BlockRegistry.ENR_WITHERITE_BLOCK;
     private static final ArmorMaterial WITHERITE_MATERIAL = MaterialRegistry.WITHERITE_MATERIAL;
+    private static final ArmorMaterial ENRICHED_WITHERITE_MATERIAL = MaterialRegistry.ENRICHED_WITHERITE_MATERIAL;
 
     // Items
     public static final Item RAW_WITHERITE = new Item(new FabricItemSettings().group(GROUP));
@@ -113,22 +114,22 @@ public class ItemRegistry {
                     .group(GROUP)
                     .fireproof());
     public static final Item ENRICHED_WITHERITE_HELMET = new ArmorItem
-            (WITHERITE_MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings()
+            (ENRICHED_WITHERITE_MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings()
                     .group(GROUP)
                     .fireproof());
 
     public static final Item ENRICHED_WITHERITE_CHESTPLATE = new ArmorItem
-            (WITHERITE_MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings()
+            (ENRICHED_WITHERITE_MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings()
                     .group(GROUP)
                     .fireproof());
 
     public static final Item ENRICHED_WITHERITE_LEGGINGS = new ArmorItem
-            (WITHERITE_MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings()
+            (ENRICHED_WITHERITE_MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings()
                     .group(GROUP)
                     .fireproof());
 
     public static final Item ENRICHED_WITHERITE_BOOTS = new ArmorItem
-            (WITHERITE_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings()
+            (ENRICHED_WITHERITE_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings()
                     .group(GROUP)
                     .fireproof());
 
