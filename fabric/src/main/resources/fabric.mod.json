@@ -17,13 +17,12 @@
   "icon": "assets/witherite_plus/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [],
     "main": [
       "flamingcherry.witherite.fabric.WitheriteFabric"
     ]
   },
   "mixins": [
-    "witherite_fabric.mixins.json"
+    "witheritefabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.12.12",

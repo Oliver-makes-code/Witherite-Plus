@@ -5,11 +5,11 @@ import net.minecraft.item.ItemStack;
 
 public class WitheriteItemGroup extends ItemGroup {
     public WitheriteItemGroup() {
-        super(ItemGroup.GROUPS.length - 1, WitheriteCommon.id("general").toString().replace(":","."));
+        super(ItemGroup.GROUPS.length, WitheriteCommon.id("general").toString().replace(":","."));
     }
 
     @Override
     public ItemStack createIcon() {
-        return ItemRegistry.WITHERITE_INGOT.getDefaultStack();
+        return Items.WITHERITE_INGOT.getDefaultStack();
     }
 }

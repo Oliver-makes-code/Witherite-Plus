@@ -1,6 +1,6 @@
 package flamingcherry.witherite.fabric;
 
-import flamingcherry.witherite.common.ItemRegistry;
+import flamingcherry.witherite.common.Items;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
 import net.minecraft.loot.condition.*;
@@ -9,7 +9,7 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
-public class LootTables {
+public class FabricLootTables {
     // Entities loot tables
     private static final Identifier WITHER_SKELETON = new Identifier("minecraft", "entities/wither_skeleton");
     private static final Identifier WITHER = new Identifier("minecraft", "entities/wither");
@@ -24,7 +24,7 @@ public class LootTables {
             if (WITHER_SKELETON.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .withEntry(ItemEntry.builder(ItemRegistry.ORGANIC_WITHERITE).build())
+                        .withEntry(ItemEntry.builder(Items.ORGANIC_WITHERITE).build())
                         .withCondition((KilledByPlayerLootCondition.builder().build()))
                         .withCondition(RandomChanceWithLootingLootCondition.builder(0.020f, 0.01f).build());
                 supplier.withPool(poolBuilder.build());
@@ -32,7 +32,7 @@ public class LootTables {
             } else if (WITHER.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .withEntry(ItemEntry.builder(ItemRegistry.DAMAGED_NETHER_STAR).build())
+                        .withEntry(ItemEntry.builder(Items.DAMAGED_NETHER_STAR).build())
                         .withCondition((KilledByPlayerLootCondition.builder().build()))
                         .withCondition(RandomChanceWithLootingLootCondition.builder(0.070f, 0.06f).build());
                 supplier.withPool(poolBuilder.build());
@@ -40,7 +40,7 @@ public class LootTables {
             } else if (NETHER_BRIDGE.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(UniformLootNumberProvider.create(0.0f, 1.0f))
-                        .withEntry(ItemEntry.builder(ItemRegistry.PIECE_OF_DAMAGED_NETHER_STAR).weight(30).build());
+                        .withEntry(ItemEntry.builder(Items.PIECE_OF_DAMAGED_NETHER_STAR).weight(30).build());
                 supplier.withPool(poolBuilder.build());
             }
         }));

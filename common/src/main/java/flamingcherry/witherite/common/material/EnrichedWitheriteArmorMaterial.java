@@ -1,6 +1,6 @@
 package flamingcherry.witherite.common.material;
 
-import flamingcherry.witherite.common.ItemRegistry;
+import flamingcherry.witherite.common.Items;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -32,7 +32,7 @@ public class EnrichedWitheriteArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ItemRegistry.ENR_WITHERITE_INGOT);
+        return Ingredient.ofItems(Items.ENR_WITHERITE_INGOT);
     }
 
     @Override

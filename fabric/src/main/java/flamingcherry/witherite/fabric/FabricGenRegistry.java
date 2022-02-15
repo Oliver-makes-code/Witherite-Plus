@@ -1,11 +1,10 @@
 package flamingcherry.witherite.fabric;
 
-import flamingcherry.witherite.common.BlockRegistry;
+import flamingcherry.witherite.common.Blocks;
 import flamingcherry.witherite.common.WitheriteCommon;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Block;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
@@ -16,8 +15,8 @@ import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
 import net.minecraft.world.gen.decorator.InSquarePlacementModifier;
 import net.minecraft.world.gen.feature.*;
 
-public class GenRegistry {
-    private static final Block WITHERITE_DEPOSIT = BlockRegistry.WITHERITE_DEPOSIT;
+public class FabricGenRegistry {
+    private static final Block WITHERITE_DEPOSIT = Blocks.WITHERITE_DEPOSIT;
 
     private static final ConfiguredFeature<?,?> WITHERITE_FEATURE = Feature.ORE.configure(
             new OreFeatureConfig(

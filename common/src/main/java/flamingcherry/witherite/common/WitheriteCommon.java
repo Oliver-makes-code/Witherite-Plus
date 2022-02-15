@@ -9,10 +9,6 @@ public class WitheriteCommon {
 
 
     public static void Initialize() {
-        ItemRegistry.register();
-        BlockRegistry.register();
-        EnchRegistry.register();
-        MaterialRegistry.register();
     }
 
     public static Identifier id(String path) {

@@ -1,6 +1,6 @@
 package flamingcherry.witherite.common.material;
 
-import flamingcherry.witherite.common.ItemRegistry;
+import flamingcherry.witherite.common.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -35,6 +35,6 @@ public class EnrWitheriteToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ItemRegistry.ENR_WITHERITE_INGOT);
+        return Ingredient.ofItems(Items.ENR_WITHERITE_INGOT);
     }
 }
