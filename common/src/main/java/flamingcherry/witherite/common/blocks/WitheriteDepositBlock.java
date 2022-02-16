@@ -1,6 +1,5 @@
 package flamingcherry.witherite.common.blocks;
 
-import flamingcherry.witherite.common.WitheriteCommon;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -12,12 +11,6 @@ import java.util.List;
 import java.util.Random;
 
 public class WitheriteDepositBlock extends Block {
-    List<Block> witheriteReplacables = List.of(new Block[]{
-            Blocks.NETHERRACK,
-            Blocks.BLACKSTONE,
-            Blocks.BASALT
-    });
-
     public WitheriteDepositBlock(Settings settings) {
         super(settings);
     }
