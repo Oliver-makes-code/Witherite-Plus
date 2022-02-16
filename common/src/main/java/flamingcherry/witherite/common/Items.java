@@ -72,13 +72,13 @@ public class Items {
                     .rarity(Rarity.UNCOMMON)
                     .fireproof());
 
-    public static ToolItem ENR_WITHERITE_PICKAXE = new EnrWitheritePickaxe
+    public static ToolItem ENR_WITHERITE_PICKAXE = new WitheritePickaxe
             (EnrWitheriteToolMaterial.INSTANCE, 5, -1.9F, new Item.Settings()
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .rarity(Rarity.UNCOMMON)
                     .fireproof());
 
-    public static ToolItem ENR_WITHERITE_AXE = new EnrWitheriteAxe
+    public static ToolItem ENR_WITHERITE_AXE = new WitheriteAxe
             (WitheriteToolMaterial.INSTANCE, 8, -2.1F, new Item.Settings()
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .rarity(Rarity.UNCOMMON)
@@ -137,7 +137,7 @@ public class Items {
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .fireproof());
 
-    public static ShearsItem ENR_WITHERITE_SHEARS = new EnrWitheriteShears
+    public static ShearsItem ENR_WITHERITE_SHEARS = new WitheriteShears
             (new Item.Settings()
                     .maxDamage(2021)
                     .group(WitheriteCommon.WITHERITE_GROUP)
@@ -151,7 +151,7 @@ public class Items {
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .fireproof());
 
-    public static FlintAndSteelItem ENR_WITHERITE_FLINT_AND_STEEL = new EnrWitheriteFlintAndSteel
+    public static FlintAndSteelItem ENR_WITHERITE_FLINT_AND_STEEL = new WitheriteFlintAndSteel
             (new Item.Settings()
                     .maxDamage(1933)
                     .group(WitheriteCommon.WITHERITE_GROUP)
