@@ -2,12 +2,11 @@ package flamingcherry.witherite.common.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 
-import java.util.List;
 import java.util.Random;
 
 public class WitheriteDepositBlock extends Block {
@@ -28,19 +27,7 @@ public class WitheriteDepositBlock extends Block {
     }
 
     public void spread(ServerWorld world, BlockPos pos, Random random) {
-        int val = (int) Math.floor(random.nextDouble()*6);
-
-        switch (val) {
-            case 0 -> pos = pos.down();
-            case 1 -> pos = pos.up();
-            case 2 -> pos = pos.east();
-            case 3 -> pos = pos.west();
-            case 4 -> pos = pos.north();
-            default ->  pos = pos.south();
-        }
-
-        BlockState state = world.getBlockState(pos);
-
+        BlockState state = world.getBlockState(pos.offset(Direction.random(random)));
         if (checkBlock(state))
             world.setBlockState(pos, getDefaultState());
     }
