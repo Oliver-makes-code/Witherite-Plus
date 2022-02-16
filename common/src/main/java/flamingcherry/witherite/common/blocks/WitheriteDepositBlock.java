@@ -33,7 +33,7 @@ public class WitheriteDepositBlock extends Block {
     }
 
     public boolean checkBlock(BlockState state) {
-        return BlockTags.BASE_STONE_NETHER.contains(state.getBlock());
+        return state.isIn(BlockTags.BASE_STONE_NETHER);
     }
 
     @Override

@@ -54,6 +54,6 @@ public class FabricItemRegistry {
         Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_deposit"), WITHERITE_DEPOSIT_ITEM);
         Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_block"), WITHERITE_BLOCK_ITEM);
         Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_block"), ENR_WITHERITE_BLOCK_ITEM);
-        Registry.register(Registry.ITEM, WitheriteCommon.id("witherproof_block"), WITHERPROOF_BLOCK_ITEM);
+        //Registry.register(Registry.ITEM, WitheriteCommon.id("witherproof_block"), WITHERPROOF_BLOCK_ITEM);
     }
 }
