@@ -1,5 +1,78 @@
 {
   "variants": {
-    "": { "model": "witherite_plus:block/witherite_deposit" }
+    "": [
+      {
+        "model": "witherite_plus:block/witherite_deposit"
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "x": 90
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "x": 180
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "x": 270
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 90
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 90,
+        "x": 90
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 90,
+        "x": 180
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 90,
+        "x": 270
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 180
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 180,
+        "x": 90
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 180,
+        "x": 180
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 180,
+        "x": 270
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 270
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 270,
+        "x": 90
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 270,
+        "x": 180
+      },
+      {
+        "model": "witherite_plus:block/witherite_deposit",
+        "y": 270,
+        "x": 270
+      }
+    ]
   }
 }
