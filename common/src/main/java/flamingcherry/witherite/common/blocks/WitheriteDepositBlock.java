@@ -29,7 +29,7 @@ public class WitheriteDepositBlock extends Block {
             int count = 0;
             for (BlockPos pos_: iter)
                 if (world.getBlockState(pos_).isOf(this)) count++;
-            if (count >= 16) return;
+            if (count >= 15) return;
             spread(world,pos,random);
         }
     }
