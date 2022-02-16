@@ -11,7 +11,7 @@ authors = ["FlamingCherry", "Oliver"]
 description = '''
 Mod that adds Wither-related items to the game.
 '''
-logoFile = "assets/witherite_plus/icon.png"
+#logoFile = "assets/witherite_plus/icon.png"
 
 [[dependencies.witherite_plus]]
 modId = "forge"
