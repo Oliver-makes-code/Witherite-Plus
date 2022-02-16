@@ -22,12 +22,12 @@ public class FabricGenRegistry {
             new OreFeatureConfig(
                     OreConfiguredFeatures.NETHERRACK,
                     WITHERITE_DEPOSIT.getDefaultState(),
-                    4
+                    1
             )
     );
 
     public static final PlacedFeature WITHERITE_DEPOSIT_PLACED = WITHERITE_FEATURE.withPlacement(
-            CountPlacementModifier.create(4),
+            CountPlacementModifier.create(2),
             InSquarePlacementModifier.getInstance(),
             HeightRangePlacementModifier.createUniform(YOffset.fixed(1), YOffset.fixed(12))
     );

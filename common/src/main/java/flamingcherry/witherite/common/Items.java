@@ -13,6 +13,7 @@ public class Items {
     public static final Block WITHERITE_DEPOSIT = Blocks.WITHERITE_DEPOSIT;
     public static final Block WITHERITE_BLOCK = Blocks.WITHERITE_BLOCK;
     public static final Block ENR_WITHERITE_BLOCK = Blocks.ENR_WITHERITE_BLOCK;
+    public static final Block WITHERPROOF = Blocks.WITHERPROOF;
     public static final ArmorMaterial WITHERITE_MATERIAL = Materials.WITHERITE_MATERIAL;
     public static final ArmorMaterial ENRICHED_WITHERITE_MATERIAL = Materials.ENRICHED_WITHERITE_MATERIAL;
 
@@ -166,6 +167,11 @@ public class Items {
 
     public static final BlockItem ENR_WITHERITE_BLOCK_ITEM = new BlockItem
             (ENR_WITHERITE_BLOCK, new Item.Settings().group(GROUP));
+
+    public static final BlockItem WITHERPROOF_BLOCK_ITEM = new BlockItem(
+            WITHERPROOF,
+            new Item.Settings().group(GROUP)
+    );
 
     public static void register() {}
 }
