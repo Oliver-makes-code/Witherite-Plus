@@ -7,7 +7,7 @@ license = "LGPL-2.1"
 modId = "witherite_plus"
 version = "${version}"
 displayName = "Witherite Plus"
-authors = ["FlamingCherry", "Oliver"]
+authors = "FlamingCherry, Oliver"
 description = '''
 Mod that adds Wither-related items to the game.
 '''
