@@ -1,6 +1,6 @@
 ### [0.2.0-beta2] 2022-02-16
 - [**merged**] Fabric+Forge jars
-- [**added**] Witherite speading mechanic
+- [**added**] Witherite spreading mechanic
 - [**overhauled**] A couple textures
 
 ### [0.2.0-beta1] 2022-02-15
