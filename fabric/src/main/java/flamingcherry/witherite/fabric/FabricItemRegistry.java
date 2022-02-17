@@ -8,6 +8,12 @@ import static flamingcherry.witherite.common.Items.*;
 public class FabricItemRegistry {
 
     public static void register() {
+        // Register Block Items
+        Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_deposit"), WITHERITE_DEPOSIT_ITEM);
+        Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_block"), WITHERITE_BLOCK_ITEM);
+        Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_block"), ENR_WITHERITE_BLOCK_ITEM);
+        Registry.register(Registry.ITEM, WitheriteCommon.id("witherproof_block"), WITHERPROOF_BLOCK_ITEM);
+
         // Register Items
         Registry.register(Registry.ITEM, WitheriteCommon.id("raw_witherite"), RAW_WITHERITE);
         Registry.register(Registry.ITEM, WitheriteCommon.id("organic_witherite"), ORGANIC_WITHERITE);
@@ -49,11 +55,5 @@ public class FabricItemRegistry {
         // Register Flint and Steel Items
         Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_flint_and_steel"), WITHERITE_FLINT_AND_STEEL);
         Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_flint_and_steel"), ENR_WITHERITE_FLINT_AND_STEEL);
-
-        // Register Block Items
-        Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_deposit"), WITHERITE_DEPOSIT_ITEM);
-        Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_block"), WITHERITE_BLOCK_ITEM);
-        Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_block"), ENR_WITHERITE_BLOCK_ITEM);
-        //Registry.register(Registry.ITEM, WitheriteCommon.id("witherproof_block"), WITHERPROOF_BLOCK_ITEM);
     }
 }

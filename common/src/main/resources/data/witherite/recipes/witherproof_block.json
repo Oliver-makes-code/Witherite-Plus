@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#S#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:nether_star"
+    },
+    "S": {
+      "item": "witherite:witherite_ingot"
+    }
+  },
+  "result": {
+    "item": "witherite:witherproof_block",
+    "count": 1
+  }
+}

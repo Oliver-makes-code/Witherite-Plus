@@ -29,6 +29,6 @@ public class ForgeBlockRegistry {
         register("witherite_deposit", () -> WITHERITE_DEPOSIT, obj -> () -> Items.WITHERITE_DEPOSIT_ITEM);
         register("witherite_block", () -> WITHERITE_BLOCK, obj -> () -> Items.WITHERITE_BLOCK_ITEM);
         register("enriched_witherite_block", () -> ENR_WITHERITE_BLOCK, obj -> () -> Items.ENR_WITHERITE_BLOCK_ITEM);
-        //register("witherproof_block", () -> WITHERPROOF, obj -> () -> Items.WITHERPROOF_BLOCK_ITEM);
+        register("witherproof_block", () -> WITHERPROOF, obj -> () -> Items.WITHERPROOF_BLOCK_ITEM);
     }
 }

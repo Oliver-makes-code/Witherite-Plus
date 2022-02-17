@@ -35,6 +35,7 @@
   "block.witherite_plus.witherite_deposit": "Witherite Deposit",
   "block.witherite_plus.witherite_block": "Witherite Block",
   "block.witherite_plus.enriched_witherite_block": "Enriched Witherite Block",
+  "block.witherite_plus.witherproof_block": "Wither-Proof Block",
   "enchantment.witherite_plus.withering": "Withering",
   "enchantment.witherite_plus.withering_defense": "Withering Defense"
 }
