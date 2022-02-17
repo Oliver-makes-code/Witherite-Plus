@@ -1,3 +1,6 @@
+### [0.2.0-beta3] 2022-02-16
+- [**fixed**] Crash on Fabric
+
 ### [0.2.0-beta2] 2022-02-16
 - [**merged**] Fabric+Forge jars
 - [**added**] Witherite spreading mechanic
