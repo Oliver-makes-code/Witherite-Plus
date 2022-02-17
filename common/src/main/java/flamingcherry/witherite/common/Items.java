@@ -35,12 +35,12 @@ public class Items {
             .group(GROUP).fireproof().rarity(Rarity.UNCOMMON));
 
     // Tool Items
-    public static ToolItem WITHERITE_SHOVEL = new WitheriteShovel
+    public static ToolItem WITHERITE_SHOVEL = new ShovelItem
             (WitheriteToolMaterial.INSTANCE, 2, -3.0F, new Item.Settings()
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .fireproof());
 
-    public static ToolItem WITHERITE_SWORD = new WitheriteSword
+    public static ToolItem WITHERITE_SWORD = new SwordItem
             (WitheriteToolMaterial.INSTANCE, 5, -1.0F, new Item.Settings()
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .fireproof());
@@ -66,7 +66,7 @@ public class Items {
                     .rarity(Rarity.UNCOMMON)
                     .fireproof());
 
-    public static ToolItem ENR_WITHERITE_SWORD = new WitheriteSword
+    public static ToolItem ENR_WITHERITE_SWORD = new SwordItem
             (WitheriteToolMaterial.INSTANCE, 7, -0.80F, new Item.Settings()
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .rarity(Rarity.UNCOMMON)
@@ -131,13 +131,13 @@ public class Items {
                     .fireproof());
 
     // Shears Items
-    public static ShearsItem WITHERITE_SHEARS = new WitheriteShears
+    public static ShearsItem WITHERITE_SHEARS = new ShearsItem
             (new Item.Settings()
                     .maxDamage(820)
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .fireproof());
 
-    public static ShearsItem ENR_WITHERITE_SHEARS = new WitheriteShears
+    public static ShearsItem ENR_WITHERITE_SHEARS = new ShearsItem
             (new Item.Settings()
                     .maxDamage(2021)
                     .group(WitheriteCommon.WITHERITE_GROUP)
@@ -145,13 +145,13 @@ public class Items {
                     .fireproof());
 
     // Flint and Steel Items
-    public static FlintAndSteelItem WITHERITE_FLINT_AND_STEEL = new WitheriteFlintAndSteel
+    public static FlintAndSteelItem WITHERITE_FLINT_AND_STEEL = new FlintAndSteelItem
             (new Item.Settings()
                     .maxDamage(730)
                     .group(WitheriteCommon.WITHERITE_GROUP)
                     .fireproof());
 
-    public static FlintAndSteelItem ENR_WITHERITE_FLINT_AND_STEEL = new WitheriteFlintAndSteel
+    public static FlintAndSteelItem ENR_WITHERITE_FLINT_AND_STEEL = new FlintAndSteelItem
             (new Item.Settings()
                     .maxDamage(1933)
                     .group(WitheriteCommon.WITHERITE_GROUP)
