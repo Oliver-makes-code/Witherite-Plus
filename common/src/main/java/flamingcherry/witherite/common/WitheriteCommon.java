@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class WitheriteCommon {
     public static final String MODID = "witherite_plus";
     public static Logger logger = LoggerFactory.getLogger(MODID);
-    public static ItemGroup WITHERITE_GROUP = new WitheriteItemGroup();
+    public static ItemGroup WITHERITE_GROUP;
     public static Tag.Identified<Block> witheriteReplaceables;
 
     public static void Initialize() {
