@@ -9,7 +9,7 @@
 - [**added**] Lang entries for Witherite Armor
 
 ### [0.1.1] - 2022-02-14
-- [**added**] Enriched Witherite Armor recipes
+- [**added**] Witherite Armor recipes
 
 ### [0.1.0] - 2022-02-14
 - [**port**] 1.18
