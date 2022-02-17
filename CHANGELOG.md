@@ -1,12 +1,8 @@
-### [0.2.0-beta3] 2022-02-16
-- [**fixed**] Crash on Fabric
-
-### [0.2.0-beta2] 2022-02-16
-- [**merged**] Fabric+Forge jars
+### [0.2.0] 2022-02-16
 - [**added**] Witherite spreading mechanic
+- [**added**] Wither-proof block
+- [**added**] Enriched Witherite Armor
 - [**overhauled**] A couple textures
-
-### [0.2.0-beta1] 2022-02-15
 - [**port**] Forge
 
 ### [0.1.2] - 2022-02-15
