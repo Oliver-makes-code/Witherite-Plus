@@ -37,10 +37,10 @@ public class FabricItemRegistry {
         Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_chestplate"), WITHERITE_CHESTPLATE);
         Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_leggings"), WITHERITE_LEGGINGS);
         Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_boots"), WITHERITE_BOOTS);
-        //Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_helmet"), ENRICHED_WITHERITE_HELMET);
-        //Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_chestplate"), ENRICHED_WITHERITE_CHESTPLATE);
-        //Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_leggings"), ENRICHED_WITHERITE_LEGGINGS);
-        //Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_boots"), ENRICHED_WITHERITE_BOOTS);
+        Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_helmet"), ENRICHED_WITHERITE_HELMET);
+        Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_chestplate"), ENRICHED_WITHERITE_CHESTPLATE);
+        Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_leggings"), ENRICHED_WITHERITE_LEGGINGS);
+        Registry.register(Registry.ITEM, WitheriteCommon.id("enriched_witherite_boots"), ENRICHED_WITHERITE_BOOTS);
 
         // Register Shears Items
         Registry.register(Registry.ITEM, WitheriteCommon.id("witherite_shears"), WITHERITE_SHEARS);
