@@ -19,7 +19,7 @@ public class WitheriteDepositBlock extends Block {
         if (random.nextDouble()*1000 < 1) {
             var iter = BlockPos.iterate(pos.getX()-7,pos.getY()-7,pos.getZ()-7,pos.getX()+7,pos.getY()+7,pos.getZ()+7);
             int count = 0;
-            int rcount = 0
+            int rcount = 0;
             for (BlockPos pos_: iter) {
                 if (world.getBlockState(pos_).isOf(this)) count++;
                 if (checkBlock(world.getBlockState(pos_))) rcount++;
