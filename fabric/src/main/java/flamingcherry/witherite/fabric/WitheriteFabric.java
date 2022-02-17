@@ -12,7 +12,7 @@ import net.minecraft.util.registry.Registry;
 public class WitheriteFabric implements ModInitializer {
     public void onInitialize() {
         ((ItemGroupExtensions) ItemGroup.BUILDING_BLOCKS).fabric_expandArray();
-        WitheriteCommon.WITHERITE_GROUP = new FabricWitheriteItemGroup(ItemGroup.GROUPS.length - 1, "witherite.general");
+        WitheriteCommon.WITHERITE_GROUP = new FabricWitheriteItemGroup(ItemGroup.GROUPS.length - 1, "witherite_plus.general");
         WitheriteCommon.Initialize();
         FabricBlockRegistry.register();
         FabricItemRegistry.register();
