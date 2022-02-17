@@ -25,7 +25,7 @@ public class WitheriteDepositBlock extends Block {
                 if (checkBlock(world.getBlockState(pos_))) rcount++;
             }
             if (count >= 16) return;
-            if (rcound < count) return;
+            if (rcount < count) return;
             spread(world,pos,random);
         }
     }
