@@ -24,7 +24,7 @@
                     }
                   }
                 ],
-                "name": "witherite:witherite_deposit"
+                "name": "witherite_plus:witherite_deposit"
               },
               {
                 "type": "minecraft:item",
@@ -38,7 +38,7 @@
                     "function": "minecraft:explosion_decay"
                   }
                 ],
-                "name": "witherite:raw_witherite"
+                "name": "witherite_plus:raw_witherite"
               }
             ]
           }

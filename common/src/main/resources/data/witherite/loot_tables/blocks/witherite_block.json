@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "witherite:witherite_block"
+          "name": "witherite_plus:witherite_block"
         }
       ],
       "conditions": [
