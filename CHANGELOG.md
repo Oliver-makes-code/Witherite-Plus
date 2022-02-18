@@ -1,3 +1,6 @@
+### [0.2.1] 2022-02-18
+- [**fixed**] Witherite blocks loot tables
+
 ### [0.2.0] 2022-02-16
 - [**added**] Witherite spreading mechanic
 - [**added**] Wither-proof block
