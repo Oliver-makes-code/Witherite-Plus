@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "witherite:piece_of_damaged_nether_star"
+      "item": "witherite_plus:piece_of_damaged_nether_star"
     }
   },
   "result": {
-    "item": "witherite:damaged_nether_star",
+    "item": "witherite_plus:damaged_nether_star",
     "count": 1
   }
 }

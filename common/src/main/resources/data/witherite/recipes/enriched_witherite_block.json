@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "witherite:enriched_witherite_ingot"
+      "item": "witherite_plus:enriched_witherite_ingot"
     }
   },
   "result": {
-    "item": "witherite:enriched_witherite_block",
+    "item": "witherite_plus:enriched_witherite_block",
     "count": 1
   }
 }

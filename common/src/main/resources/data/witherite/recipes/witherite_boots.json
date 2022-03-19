@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_boots"
   },
   "addition": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_boots"
+    "item": "witherite_plus:witherite_boots"
   }
 }

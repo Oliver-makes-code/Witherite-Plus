@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "witherite:witherite_ingot"
+      "item": "witherite_plus:witherite_ingot"
     }
   },
   "result": {
-    "item": "witherite:witherite_nugget",
+    "item": "witherite_plus:witherite_nugget",
     "count": 1
   }
 }

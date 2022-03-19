@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_pickaxe"
   },
   "addition": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_pickaxe"
+    "item": "witherite_plus:witherite_pickaxe"
   }
 }

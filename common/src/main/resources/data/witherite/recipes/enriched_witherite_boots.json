@@ -1,12 +1,12 @@
 {
   "type": "smithing",
   "base": {
-    "item": "witherite:witherite_boots"
+    "item": "witherite_plus:witherite_boots"
   },
   "addition": {
-    "item": "witherite:enriched_witherite_ingot"
+    "item": "witherite_plus:enriched_witherite_ingot"
   },
   "result": {
-    "item": "witherite:enriched_witherite_boots"
+    "item": "witherite_plus:enriched_witherite_boots"
   }
 }

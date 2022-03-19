@@ -4,9 +4,9 @@
     "item": "minecraft:shears"
   },
   "addition": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_shears"
+    "item": "witherite_plus:witherite_shears"
   }
 }

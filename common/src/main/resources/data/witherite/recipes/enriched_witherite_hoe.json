@@ -1,12 +1,12 @@
 {
   "type": "smithing",
   "base": {
-    "item": "witherite:witherite_hoe"
+    "item": "witherite_plus:witherite_hoe"
   },
   "addition": {
-    "item": "witherite:enriched_witherite_ingot"
+    "item": "witherite_plus:enriched_witherite_ingot"
   },
   "result": {
-    "item": "witherite:enriched_witherite_hoe"
+    "item": "witherite_plus:enriched_witherite_hoe"
   }
 }

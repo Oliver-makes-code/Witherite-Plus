@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "witherite:refined_witherite"
+    "item": "witherite_plus:refined_witherite"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   }
 }

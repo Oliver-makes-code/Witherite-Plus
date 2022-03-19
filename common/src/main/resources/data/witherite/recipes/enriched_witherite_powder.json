@@ -7,17 +7,17 @@
   ],
   "key": {
     "I": {
-      "item": "witherite:witherite_ingot"
+      "item": "witherite_plus:witherite_ingot"
     },
     "C": {
-      "item": "witherite:organic_witherite"
+      "item": "witherite_plus:organic_witherite"
     },
     "N": {
-      "item": "witherite:damaged_nether_star"
+      "item": "witherite_plus:damaged_nether_star"
     }
   },
   "result": {
-    "item": "witherite:enriched_witherite_powder",
+    "item": "witherite_plus:enriched_witherite_powder",
     "count": 1
   }
 }

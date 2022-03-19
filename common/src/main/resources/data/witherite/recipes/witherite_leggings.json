@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_leggings"
   },
   "addition": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_leggings"
+    "item": "witherite_plus:witherite_leggings"
   }
 }

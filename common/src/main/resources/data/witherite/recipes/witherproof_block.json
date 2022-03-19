@@ -10,11 +10,11 @@
       "item": "minecraft:nether_star"
     },
     "S": {
-      "item": "witherite:witherite_ingot"
+      "item": "witherite_plus:witherite_ingot"
     }
   },
   "result": {
-    "item": "witherite:witherproof_block",
+    "item": "witherite_plus:witherproof_block",
     "count": 1
   }
 }

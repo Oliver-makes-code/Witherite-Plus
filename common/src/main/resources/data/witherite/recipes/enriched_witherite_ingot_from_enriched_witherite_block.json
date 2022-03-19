@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "witherite:enriched_witherite_block"
+      "item": "witherite_plus:enriched_witherite_block"
     }
   },
   "result": {
-    "item": "witherite:enriched_witherite_ingot",
+    "item": "witherite_plus:enriched_witherite_ingot",
     "count": 9
   }
 }

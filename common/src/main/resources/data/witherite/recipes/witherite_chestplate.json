@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_chestplate"
   },
   "addition": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_chestplate"
+    "item": "witherite_plus:witherite_chestplate"
   }
 }

@@ -4,9 +4,9 @@
     "item": "minecraft:netherite_hoe"
   },
   "addition": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_hoe"
+    "item": "witherite_plus:witherite_hoe"
   }
 }

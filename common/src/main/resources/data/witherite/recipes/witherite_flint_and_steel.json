@@ -4,9 +4,9 @@
     "item": "minecraft:flint_and_steel"
   },
   "addition": {
-    "item": "witherite:witherite_ingot"
+    "item": "witherite_plus:witherite_ingot"
   },
   "result": {
-    "item": "witherite:witherite_flint_and_steel"
+    "item": "witherite_plus:witherite_flint_and_steel"
   }
 }
