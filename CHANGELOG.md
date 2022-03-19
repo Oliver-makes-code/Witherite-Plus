@@ -1,3 +1,6 @@
+### [0.2.2] 2022-03-19
+- [**port**] 1.18.2
+
 ### [0.2.1] 2022-02-18
 - [**fixed**] Witherite blocks loot tables
 

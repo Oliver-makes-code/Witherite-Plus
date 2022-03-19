@@ -20,7 +20,7 @@
       "flamingcherry.witherite.fabric.WitheriteFabric"
     ]
   },
-  "mixins": [
+  "mixins_": [
     "witheritefabric.mixins.json"
   ],
   "depends": {

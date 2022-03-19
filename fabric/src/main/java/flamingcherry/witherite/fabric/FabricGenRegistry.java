@@ -5,7 +5,9 @@ import flamingcherry.witherite.common.WitheriteCommon;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Block;
+import net.minecraft.util.Holder;
 import net.minecraft.util.registry.BuiltinRegistries;
+import net.minecraft.util.registry.DynamicRegistryManager;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.GenerationStep;
@@ -14,35 +16,26 @@ import net.minecraft.world.gen.decorator.CountPlacementModifier;
 import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
 import net.minecraft.world.gen.decorator.InSquarePlacementModifier;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.util.ConfiguredFeatureUtil;
+import net.minecraft.world.gen.feature.util.PlacedFeatureUtil;
 
 public class FabricGenRegistry {
     private static final Block WITHERITE_DEPOSIT = Blocks.WITHERITE_DEPOSIT;
 
-    private static final ConfiguredFeature<?,?> WITHERITE_FEATURE = Feature.ORE.configure(
+    private static final Holder<ConfiguredFeature<OreFeatureConfig,?>> WITHERITE_FEATURE = ConfiguredFeatureUtil.register(WitheriteCommon.id("witherite_ore").toString(), Feature.ORE,
             new OreFeatureConfig(
                     OreConfiguredFeatures.NETHERRACK,
                     WITHERITE_DEPOSIT.getDefaultState(),
                     1
             )
     );
-
-    public static final PlacedFeature WITHERITE_DEPOSIT_PLACED = WITHERITE_FEATURE.withPlacement(
+    public static Holder<PlacedFeature> WITHERITE_DEPOSIT_FEATURE = PlacedFeatureUtil.register(WitheriteCommon.id("witherite_ore").toString(),WITHERITE_FEATURE,
             CountPlacementModifier.create(2),
             InSquarePlacementModifier.getInstance(),
             HeightRangePlacementModifier.createUniform(YOffset.fixed(1), YOffset.fixed(12))
     );
 
     public static void register() {
-        Registry.register(
-                BuiltinRegistries.CONFIGURED_FEATURE,
-                WitheriteCommon.id("witherite_ore"),
-                WITHERITE_FEATURE
-        );
-        Registry.register(
-                BuiltinRegistries.PLACED_FEATURE,
-                WitheriteCommon.id("witherite_ore"),
-                WITHERITE_DEPOSIT_PLACED
-        );
         BiomeModifications.addFeature(
                 BiomeSelectors.foundInTheNether(),
                 GenerationStep.Feature.UNDERGROUND_ORES,

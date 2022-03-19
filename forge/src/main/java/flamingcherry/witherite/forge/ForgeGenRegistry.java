@@ -3,6 +3,7 @@ package flamingcherry.witherite.forge;
 import flamingcherry.witherite.common.Blocks;
 import flamingcherry.witherite.common.WitheriteCommon;
 import net.minecraft.block.Block;
+import net.minecraft.util.Holder;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -12,6 +13,8 @@ import net.minecraft.world.gen.decorator.CountPlacementModifier;
 import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
 import net.minecraft.world.gen.decorator.InSquarePlacementModifier;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.util.ConfiguredFeatureUtil;
+import net.minecraft.world.gen.feature.util.PlacedFeatureUtil;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,31 +22,24 @@ import net.minecraftforge.fml.common.Mod;
 public class ForgeGenRegistry {
     private static final Block WITHERITE_DEPOSIT = Blocks.WITHERITE_DEPOSIT;
 
-    private static final ConfiguredFeature<?,?> WITHERITE_FEATURE = Feature.ORE.configure(
-            new OreFeatureConfig(
-                    OreConfiguredFeatures.NETHERRACK,
-                    WITHERITE_DEPOSIT.getDefaultState(),
-                    1
-            )
-    );
+    private static Holder<ConfiguredFeature<OreFeatureConfig,?>> WITHERITE_FEATURE;
 
-    public static final PlacedFeature WITHERITE_DEPOSIT_PLACED = WITHERITE_FEATURE.withPlacement(
-            CountPlacementModifier.create(2),
-            InSquarePlacementModifier.getInstance(),
-            HeightRangePlacementModifier.createUniform(YOffset.fixed(1), YOffset.fixed(12))
-    );
+    public static Holder<PlacedFeature> WITHERITE_DEPOSIT_PLACED;
 
     public static void registerOre() {
-        Registry.register(
-                BuiltinRegistries.CONFIGURED_FEATURE,
-                WitheriteCommon.id("witherite_ore"),
-                WITHERITE_FEATURE
+        WITHERITE_FEATURE = ConfiguredFeatureUtil.register("witherite_ore", Feature.ORE,
+                new OreFeatureConfig(
+                        OreConfiguredFeatures.NETHERRACK,
+                        WITHERITE_DEPOSIT.getDefaultState(),
+                        1
+                )
         );
-        Registry.register(
-                BuiltinRegistries.PLACED_FEATURE,
-                WitheriteCommon.id("witherite_ore"),
-                WITHERITE_DEPOSIT_PLACED
+        WITHERITE_DEPOSIT_PLACED = PlacedFeatureUtil.register("witherite_ore",WITHERITE_FEATURE,
+                CountPlacementModifier.create(2),
+                InSquarePlacementModifier.getInstance(),
+                HeightRangePlacementModifier.createUniform(YOffset.fixed(1), YOffset.fixed(12))
         );
+
     }
 
     @Mod.EventBusSubscriber(modid = WitheriteCommon.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
