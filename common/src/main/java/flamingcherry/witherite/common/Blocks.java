@@ -4,6 +4,7 @@ import flamingcherry.witherite.common.blocks.WitheriteDepositBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.sound.BlockSoundGroup;
 
 public class Blocks {
 
@@ -15,6 +16,7 @@ public class Blocks {
                         .resistance(900.0f)
                         .requiresTool()
                         .ticksRandomly()
+                        .sounds(BlockSoundGroup.NETHERRACK)
             );
 
     public static final Block WITHERITE_BLOCK = new Block(
@@ -22,12 +24,14 @@ public class Blocks {
                         .of(Material.METAL)
                         .hardness(20.0f)
                         .resistance(600.0f)
+                        .sounds(BlockSoundGroup.METAL)
             );
     public static final Block ENR_WITHERITE_BLOCK = new Block(
                 Block.Settings
                         .of(Material.METAL)
                         .hardness(55.0f)
                         .resistance(1200.0f)
+                        .sounds(BlockSoundGroup.METAL)
             );
 
     public static final Block WITHERPROOF = new Block(
@@ -36,5 +40,6 @@ public class Blocks {
                         .requiresTool()
                         .hardness(55f)
                         .resistance(12000f)
+                        .sounds(BlockSoundGroup.METAL)
             );
 }

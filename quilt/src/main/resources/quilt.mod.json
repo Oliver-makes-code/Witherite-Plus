@@ -20,7 +20,7 @@
 
     "environment": "*",
     "entrypoints": {
-      "main": [
+      "init": [
         "flamingcherry.witherite.quilt.WitheriteQuilt"
       ]
     },
