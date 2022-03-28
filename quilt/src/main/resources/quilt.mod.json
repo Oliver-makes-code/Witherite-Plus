@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "flamingcherry",
+    "id": "witherite_plus",
+    "version": "${version}",
+    "name": "Witherite Plus",
+    "description": "Mod that adds Wither-related items to the game.",
+    "authors": [
+      "FlamingCherry",
+      "Oliver"
+    ],
+    "contact": {
+      "repo": "https://github.com/Oliver-makes-code/Witherite-Plus",
+      "homepage": "https://github.com/Oliver-makes-code/Witherite-Plus",
+      "issues": "https://github.com/Oliver-makes-code/Witherite-Plus/issues"
+    },
+
+    "license": "LGPL-2.1",
+
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "flamingcherry.witherite.quilt.WitheriteQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": "1.18.2"
+      },
+      {
+        "id": "java",
+        "version": ">=17"
+      }
+    ]
+  }
+}
