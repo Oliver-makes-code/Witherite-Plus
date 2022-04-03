@@ -1,9 +1,6 @@
 package flamingcherry.witherite.forge;
 
 import flamingcherry.witherite.common.WitheriteCommon;
-import net.minecraft.tag.BlockTags;
-import net.minecraft.tag.TagKey;
-import net.minecraft.util.registry.Registry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,11 +20,13 @@ public class WitheriteForge {
         ForgeBlockRegistry.BLOCKS.register(events);
         ForgeItemRegistry.ITEMS.register(events);
         ForgeEnchRegistry.ENCHANTS.register(events);
+        ForgeEntityRegistry.ENTITIES.register(events);
 
         MinecraftForge.EVENT_BUS.register(this);
         ForgeBlockRegistry.register();
         ForgeItemRegistry.register();
         ForgeEnchRegistry.register();
+        ForgeEntityRegistry.register();
     }
 
     @Mod.EventBusSubscriber(modid = WitheriteCommon.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)

@@ -82,18 +82,18 @@ def includeJar(jar, it) {
 
 jar {
     duplicatesStrategy = DuplicatesStrategy.WARN
-    includeJar(project(name).remapJar, it)
-    includeJar(project(name).remapJar, it)
-    includeJar(project(name).remapJar, it)
+    includeJar(project(":fabric").remapJar, it)
+    includeJar(project(":forge").remapJar, it)
+    includeJar(project(":quilt").remapJar, it)
 
     classifier "main"
 }
 
 sourcesJar {
     duplicatesStrategy = DuplicatesStrategy.WARN
-    includeJar(project(name).sourcesJar, it)
-    includeJar(project(name).sourcesJar, it)
-    includeJar(project(name).sourcesJar, it)
+    includeJar(project(":fabric").sourcesJar, it)
+    includeJar(project(":forge").sourcesJar, it)
+    includeJar(project(":quilt").sourcesJar, it)
 
     classifier "main-sources"
 }

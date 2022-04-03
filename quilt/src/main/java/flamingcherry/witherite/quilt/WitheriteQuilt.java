@@ -17,7 +17,7 @@ public class WitheriteQuilt implements ModInitializer {
         QuiltBlockRegistry.register();
         QuiltItemRegistry.register();
         QuiltGenRegistry.register();
-
+        QuiltEntityRegistry.register();
 
         Registry.register(Registry.ENCHANTMENT, WitheriteCommon.id("withering"), new WitheringEnch());
         Registry.register(Registry.ENCHANTMENT, WitheriteCommon.id("withering_defense"), new WitheringDefEnch());
