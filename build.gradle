@@ -75,26 +75,25 @@ allprojects {
     }
 }
 
+def includeJar(jar, it) {
+    it.dependsOn jar
+    it.from jar.archiveFile.map { zipTree(it) }
+}
+
 jar {
     duplicatesStrategy = DuplicatesStrategy.WARN
-    def forge = project(":forge").remapJar
-    dependsOn forge
-    from forge.archiveFile.map { zipTree(it) }
-    def fabric = project(":fabric").remapJar
-    dependsOn fabric
-    from fabric.archiveFile.map { zipTree(it) }
+    includeJar(project(name).remapJar, it)
+    includeJar(project(name).remapJar, it)
+    includeJar(project(name).remapJar, it)
 
     classifier "main"
 }
 
 sourcesJar {
     duplicatesStrategy = DuplicatesStrategy.WARN
-    def forge = project(":forge").sourcesJar
-    dependsOn forge
-    from forge.archiveFile.map { zipTree(it) }
-    def fabric = project(":fabric").sourcesJar
-    dependsOn fabric
-    from fabric.archiveFile.map { zipTree(it) }
+    includeJar(project(name).sourcesJar, it)
+    includeJar(project(name).sourcesJar, it)
+    includeJar(project(name).sourcesJar, it)
 
     classifier "main-sources"
 }
